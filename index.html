@@ -103,6 +103,8 @@
 
   <script>
 
+  $("#total-count").html($(".todo").length);
+
 
   function toggleDone() {
     var checkbox = this;
@@ -112,7 +114,7 @@
 
   $(document).ready(function() {
     $("input[type=checkbox]").bind('change', toggleDone);
-    updateCounters(); 
+    updateCounters();
   });
    </script>
 </body>
